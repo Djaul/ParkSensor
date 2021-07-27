@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\startup.o"
+".\objects\main.o"
+".\objects\display.o"
+".\objects\transmit.o"
+".\objects\lcd_init.o"
+".\objects\gpio_init.o"
+".\objects\init_timer0.o"
+".\objects\timer0a_handler.o"
+".\objects\adc_init.o"
+".\objects\printdigit.o"
+".\objects\delay100.o"
+".\objects\convrt.o"
+".\objects\outstr.o"
+".\objects\ultrasound_inits.o"
+".\objects\ultrasound_measurement.o"
+".\objects\breaking_mode.o"
+".\objects\threshold_mode.o"
+".\objects\update_threshold_bar.o"
+".\objects\init_timer3.o"
+".\objects\motor_gpio.o"
+".\objects\timer3a_handler.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ParkSensor.map" -o .\Objects\ParkSensor.axf
